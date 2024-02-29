@@ -5,13 +5,9 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-  const [jerseys, setJerseys] = useState([])
+  
 
-  useEffect(()=> {
-    fetch("http://localhost:3000/jerseys")
-    .then(response=> response.json())
-    .then(data=> setJerseys(data))
-  }, [])
+  
 
   return (
     <>
