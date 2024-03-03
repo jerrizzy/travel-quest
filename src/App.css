@@ -1,42 +1,331 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  /* Updated to a deep gray/blue shade */
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 99%;
 
+
+}
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  margin: 0;
+  font-size: 24px;
+  color: #EAEAEA;
+  /* Light grey for a modern look */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Style for the links container remains the same */
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Style for the links */
+.links a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+  background-color: #404050;
+  /* Slightly lighter shade of the navbar for hover */
+}
+
+.home {
+  background-image: linear-gradient(135deg, #ed0b0b 0%, #0414f8 100%);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  display: flex;
+  font-size: 7em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 2em;
+}
+.bn632-hover {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn19 {
+  background-image: linear-gradient(
+    to right,
+    #f5ce62,
+    #e43603,
+    #fa7199,
+    #e85a19
+  );
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+.destination-list {
+  max-width: 60vw ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  /* Provides space between cards */
+  padding: 20px;
+}
+.destination-list h1 {
+font-size: 2em ;
+position: relative;
+left: 450px;
+top: -34px
+}
+.destination-list input {
+  position: relative;
+  top: 40px;
+  left: 120px
+}
+/* Style for individual product cards */
+.destination-card {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: linear-gradient(135deg, #ed0b0b 0%, #0414f8 100%);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  top: 65px
+  
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+  /* Slight lift effect on hover */
+  /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); */
+  /* Enhanced shadow on hover for depth */
+}
+
+/* Style for the product images */
+.destination-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Style for the product name (h3) */
+.destination-card h3 {
+  font-size: 16px;
+  /* Subtle and elegant */
+  color: #fdfbfb;
+  /* Dark color for contrast but not too harsh */
+  margin: 10px 0 5px;
+  /* Adequate spacing */
+  font-weight: 400;
+  /* Normal weight to keep it sleek */
+}
+
+/* Style for the product price */
+.destination-card p {
+  font-size: 14px;
+  /* Slightly smaller font size for subtlety */
+  color: #fbf7f7;
+  /* Soft color for price */
+  margin: 0 0 10px;
+  /* Positioning closer to the bottom */
+}
+
+/* Style for the 'Add to Cart' button */
+.destination-card .add-to-favorites {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fa0505;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.destination-card .add-to-favorites:hover {
+  background-position: 100% 0;
+  
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.destination-card .add-to-favorites:focus {
+  outline: none;
+}
+
+.destination-card .add-to-favorites.bn19 {
+  background-image: linear-gradient(
+    to right,
+    #f5ce62,
+    #e43603,
+    #fa7199,
+    #e85a19
+  );
+}
+.container {
+  max-width: 1200px;
+  /* Limits the maximum width of the content */
+  margin: 0 auto;
+  /* Centers the container */
+  padding: 20px;
+  /* Adds padding around the content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Ensures content is centered within the container */
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 20px 10px;
+    /* Adjusts padding for smaller screens */
   }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Resetting default margin and padding */
+
+
+.destination-detail-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background-image: linear-gradient(135deg, #ff9900 0%, #ff5f6d 100%);
+  height: 100vh;
+  width: 100%;
+  /* Light background */
 }
 
-.card {
-  padding: 2em;
+.destination-detail {
+  width: 80%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  /* White background for the product detail */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  /* Soft shadow for depth */
+  padding: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.destination-detail img {
+  width: 50%;
+  max-width: 300px;
+  border-radius: 10px;
+  /* Rounded corners for the image */
+  margin-right: 20px;
+}
+
+.destination-detail-info {
+  flex: 1;
+}
+
+.destination-detail-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* .price {
+  font-size: 18px;
+  color: #333;
+  /* Dark color for price */
+
+
+.availability {
+  font-size: 16px;
+  color: #666;
+  /* Medium-dark color for availability */
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  /* Medium-dark color for description */
+  margin-bottom: 20px;
+} */
+
+.add-to-favorites {
+  background-color: #333;
+  /* Dark background for button */
+  color: #fff;
+  /* White text for contrast */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-favorites:hover {
+  background-color: #555;
+  /* Darker shade on hover */
 }
