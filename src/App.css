@@ -39,8 +39,9 @@
   /* Slightly lighter shade of the navbar for hover */
 }
 
+
 .banner {
-  background-image: linear-gradient(135deg, #ed0b0b 0%, #0414f8 100%);
+  background-image: url("/Users/jerry.janvier@vice.com/Development/code/phase-2/phase-2-project/src/assets/aerial_beach.jpeg");;
     color: white;
     text-align: center;
     padding: 100px 20px;
