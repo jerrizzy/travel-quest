@@ -10,8 +10,7 @@
   top: 0;
   left: 0;
   width: 99%;
-
-
+  z-index: 1000;
 }
 .logo {
   margin: 0;
@@ -40,8 +39,9 @@
   /* Slightly lighter shade of the navbar for hover */
 }
 
-.home {
-  background-image: url("/Users/jerry.janvier@vice.com/Development/code/phase-2/phase-2-project/src/assets/aerial_beach.jpeg");
+
+.banner {
+  background-image: url("/Users/jerry.janvier@vice.com/Development/code/phase-2/phase-2-project/src/assets/aerial_beach.jpeg");;
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -56,12 +56,6 @@
     width: 100%;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
 
 h1 {
   display: flex;
@@ -123,213 +117,48 @@ p {
   box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
 }
 .destination-list {
-  max-width: 60vw ;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  /* Provides space between cards */
-  padding: 20px;
-}
-.destination-list h1 {
-font-size: 2em ;
-position: relative;
-left: 450px;
-top: -34px
-}
-.destination-list input {
-  position: relative;
-  top: 40px;
-  left: 120px
-}
-/* Style for individual product cards */
-.destination-card {
-  width: 250px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-image: linear-gradient(135deg, #ed0b0b 0%, #0414f8 100%);
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  position: relative;
-  top: 65px
-  
-}
-
-.destination-card:hover {
-  transform: translateY(-5px);
-  /* Slight lift effect on hover */
-  /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); */
-  /* Enhanced shadow on hover for depth */
-}
-
-/* Style for the product images */
-.destination-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-/* Style for the product name (h3) */
-.destination-card h3 {
-  font-size: 16px;
-  /* Subtle and elegant */
-  color: #fdfbfb;
-  /* Dark color for contrast but not too harsh */
-  margin: 10px 0 5px;
-  /* Adequate spacing */
-  font-weight: 400;
-  /* Normal weight to keep it sleek */
-}
-
-/* Style for the product price */
-.destination-card p {
-  font-size: 14px;
-  /* Slightly smaller font size for subtlety */
-  color: #fbf7f7;
-  /* Soft color for price */
-  margin: 0 0 10px;
-  /* Positioning closer to the bottom */
-}
-
-/* Style for the 'Add to Cart' button */
-.destination-card .add-to-favorites {
-  width: 160px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fa0505;
-  cursor: pointer;
-  margin: 20px;
-  height: 55px;
-  text-align:center;
-  border: none;
-  background-size: 300% 100%;
-  border-radius: 50px;
-  
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-}
-
-.destination-card .add-to-favorites:hover {
-  background-position: 100% 0;
-  
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-}
-.destination-card .add-to-favorites:focus {
-  outline: none;
-}
-
-.destination-card .add-to-favorites.bn19 {
-  background-image: linear-gradient(
-    to right,
-    #f5ce62,
-    #e43603,
-    #fa7199,
-    #e85a19
-  );
-}
-.container {
-  max-width: 1200px;
-  /* Limits the maximum width of the content */
-  margin: 0 auto;
-  /* Centers the container */
-  padding: 20px;
-  /* Adds padding around the content */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Ensures content is centered within the container */
+
 }
-
-@media screen and (max-width: 1200px) {
-  .container {
-    padding: 20px 10px;
-    /* Adjusts padding for smaller screens */
-  }
-}
-
-/* Resetting default margin and padding */
-
-
-.destination-detail-page {
+.list-header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-    background-image: linear-gradient(135deg, #ff9900 0%, #ff5f6d 100%);
-  height: 100vh;
-  width: 100%;
-  /* Light background */
+  margin-top: 60px;
 }
-
-.destination-detail {
-  width: 80%;
-  max-width: 800px;
+.list-header p {
   display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: #fff;
-  /* White background for the product detail */
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  /* Soft shadow for depth */
-  padding: 20px;
 }
-
-.destination-detail img {
-  width: 50%;
-  max-width: 300px;
-  border-radius: 10px;
-  /* Rounded corners for the image */
-  margin-right: 20px;
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.destination-detail-info {
-  flex: 1;
+.search input {
+  border-radius: 30px;
+  border-color: rgb(113, 113, 113);
+  width: 200px
 }
-
-.destination-detail-info h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.destination-list select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin-top: 10px;
 }
-
-/* .price {
-  font-size: 18px;
-  color: #333;
-  /* Dark color for price */
-
-
-.availability {
-  font-size: 16px;
-  color: #666;
-  /* Medium-dark color for availability */
-  margin-bottom: 10px;
+.card-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-
-.description {
-  font-size: 16px;
-  color: #666;
-  /* Medium-dark color for description */
-  margin-bottom: 20px;
-} */
-
-.add-to-favorites {
-  background-color: #333;
-  /* Dark background for button */
-  color: #fff;
-  /* White text for contrast */
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.add-to-favorites:hover {
-  background-color: #555;
-  /* Darker shade on hover */
+.new-destination-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

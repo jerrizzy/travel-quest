@@ -23,12 +23,10 @@ function App() {
 
   return (
     <div>
-
-      <div className="app">
       <Navbar />
-      <Home />
-      <DestinationList destinations={destinations}/>
-      <NewDestination destinations={destinations} setDestinations={setDestinations} />
+      <div className="container">
+      <Outlet context={{ destinations }} />
+
       </div>
       
     </div>
