@@ -7,7 +7,8 @@ function DestinationCard({ destination }) {
           <img src={destination.image} alt={"destination"} />
           <div className="destination-card-details">
             <h3>{destination.name}</h3>
-            <p>{destination.country}</p>
+            <h4>{destination.country}</h4>
+            <button className="favorites" > Add To Favorites</button>
           </div>
         </div>
       );
