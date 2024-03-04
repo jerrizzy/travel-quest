@@ -1,15 +1,14 @@
+import React from "react";
 
-
-
-function DestinationCard() {
+function DestinationCard({ destination }) {
 
     return (
         <div  className="destination-card">
-          <img src={""} alt={"destination"} />
+          <img src={destination.image} alt={"destination"} />
           <div className="destination-card-details">
-            <h3>{"Name"}</h3>
-            <p>{"Details"}</p>
-            <button className="add-to-favorites">Add to Favorites</button>
+            <h3>{destination.name}</h3>
+            <h4>{destination.country}</h4>
+            <button className="favorites" > Add To Favorites</button>
           </div>
         </div>
       );
