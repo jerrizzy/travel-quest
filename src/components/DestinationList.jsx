@@ -12,7 +12,7 @@ function DestinationList({ destinations }) {
   const searchedResults = destinations.filter((result) => result.name.toLowerCase().includes(search.toLowerCase()))
   
   // this function updates search state by targetting the input value, i.e whatever the user enters
-  // we use it in the input element with onChange event listener - line 25
+  // we use it in the input element with onChange event listener - line 2521
   function handleSearch (e) {
     setSearch(e.target.value)
   }

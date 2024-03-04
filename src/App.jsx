@@ -28,7 +28,7 @@ function App() {
       <Navbar />
       <Home />
       <DestinationList destinations={destinations}/>
-      <NewDestination />
+      <NewDestination destinations={destinations} setDestinations={setDestinations} />
       </div>
       
     </div>
