@@ -1,7 +1,7 @@
 import DestinationCard from "./DestinationCard";
 
 
-function DestinationList() {
+function DestinationList({ destinations}) {
 
 return (
     <div className="destination-list">
@@ -10,10 +10,11 @@ return (
         <div className="search">
         <input
           type="text"
-          placeholder="Search...."
-          
-        />
-        <DestinationCard />
+          placeholder="Search...."/>
+
+          {destinations.map((destination) => (
+          <DestinationCard key={destination.id} destination={destination} />))}
+        
       </div>
     </div>
 )
