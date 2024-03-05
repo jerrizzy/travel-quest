@@ -33,11 +33,12 @@ function DestinationList({}) {
           placeholder="Search...."
           value={search}/>
           </div>
+
           {/* {searchedResults.map((destination) => (
           <DestinationCard key={destination.id} destination={destination} />))} */}
 
         
-      
+    
       
       <select id="continent-select">
   <option value="">Select a Continent</option>
@@ -55,6 +56,7 @@ function DestinationList({}) {
         {searchedResults.map((destination) => (
           <DestinationCard key={destination.id} destination={destination} />))}
           </div>
+
     </div>
 )
 
