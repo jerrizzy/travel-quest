@@ -6,7 +6,10 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import DestinationList from './components/DestinationList.jsx'
 import DestinationCard from './components/DestinationCard.jsx'
+import Favorites from './components/Favorites.jsx'
+import DestinationPage from './components/DestinationPage.jsx'
 
+// set up browser routes
 const Main = () => {
   const routes = createBrowserRouter([
     {
@@ -28,7 +31,11 @@ const Main = () => {
         },
         {
           path: "/destinations/:id",
-          element: <DestinationCard />
+          element: <DestinationPage />
+        },
+        {
+        path: "/favorites",
+        element: <Favorites />
         }
       ],
     },

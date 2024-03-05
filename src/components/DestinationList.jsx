@@ -32,12 +32,13 @@ function DestinationList({}) {
           type="text"
           placeholder="Search...."
           value={search}/>
+          </div>
 
-          {searchedResults.map((destination) => (
-          <DestinationCard key={destination.id} destination={destination} />))}
+          {/* {searchedResults.map((destination) => (
+          <DestinationCard key={destination.id} destination={destination} />))} */}
 
         
-      
+    
       
       <select id="continent-select">
   <option value="">Select a Continent</option>
@@ -52,20 +53,11 @@ function DestinationList({}) {
         
         
         <div className="card-holder">
-        {destinations.map((destination) => (
+        {searchedResults.map((destination) => (
           <DestinationCard key={destination.id} destination={destination} />))}
           </div>
 
-          <div className="new-destination-form">
-          <h2>New Destination</h2>
-          <form className="form " >
-          <label for="name">Name:</label>
-            <input  type="text" name="name" placeholder="Destination name" />
-            <input  type="text" name="image" placeholder="Image URL" />
-            <input  type="text" name="details" placeholder="Add Details" />
-            <button type="submit">Add Destination</button>
-          </form>
-        </div>
+          
       ;
     </div>
 )

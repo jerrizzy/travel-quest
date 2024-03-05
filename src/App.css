@@ -41,7 +41,7 @@
 
 
 .banner {
-  background-image: url("/Users/jerry.janvier@vice.com/Development/code/phase-2/phase-2-project/src/assets/aerial_beach.jpeg");;
+  background-image: url("./src/assets/aerial_beach.jpeg");;
     color: white;
     text-align: center;
     padding: 100px 20px;
