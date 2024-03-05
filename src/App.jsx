@@ -13,6 +13,7 @@ function App() {
 
   // state holding destinations
   const [destinations, setDestinations] = useState([]) 
+  const [favorites, setFavorites] = useState([])
   
   // fetching destinations from server
   useEffect(() => {
@@ -25,7 +26,7 @@ function App() {
     <div>
       <Navbar />
       <div className="container">
-      <Outlet context={{ destinations }} />
+      <Outlet context={{ destinations, setDestinations, favorites, setFavorites}} />
 
       </div>
       
