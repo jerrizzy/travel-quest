@@ -57,8 +57,6 @@ function DestinationList({}) {
           <DestinationCard key={destination.id} destination={destination} />))}
           </div>
 
-          
-      ;
     </div>
 )
 
