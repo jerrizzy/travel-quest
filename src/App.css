@@ -339,4 +339,31 @@ Play
   background-color: #0056b3; /* Darker shade on hover */
 }
 
+.destination-detail-page {
+  display: flex;
+}
+
+#asia {
+  background-image: "src/assets/Asia.jpeg";
+}
+
+#australia {
+  background-image: "src/assets/Australia_wild_life.jpg";
+}
+
+#africa {
+  background-image: "src/assets/desert.jpg";
+}
+
+#carribean {
+  background-image: "src/assets/aerial_beach.jpeg";
+}
+
+#antartica {
+  background-image: "src/assets/northern lights.jpeg";
+}
+
+#south-america {
+  background-image: "src/assets/blue_beach.jpeg";
+}
 
