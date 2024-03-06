@@ -123,32 +123,45 @@ h1 {
 }
 .destination-list {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  
 
+}
+.list-header{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
 }
 .list-header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+  color: #f0f0f0;
 }
 .list-header p {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 2em;
+  color: #f0f0f0;
 }
 .search {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px
 }
 .search input {
   border-radius: 30px;
   border-color: rgb(113, 113, 113);
   width: 200px
 }
-.destination-list select {
+.continent select {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,10 +173,216 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
+
+.form {
+  padding-top: 20px; /* Adds padding around the form */
+  padding-bottom:20px;
+  padding-left: 400px;
+  padding-right: 400px;
+  background-color: #f0f0f0; /* Optional: adds a background color to the form area */
+  border-radius: 8px; /* Optional: rounds the corners of the form */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow to the form */
+  max-width: 500px; /* Optional: limits the form width for better layout */
+  margin: auto; /* Centers the form on the page */
+}
+
 .new-destination-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 15px; /* Increases the gap between form elements */
+  width: 100%
+}
+
+.new-destination-form .input-text {
+  width: 100%; /* Makes the input take the full width of the form */
+  padding: 12px 20px; /* Increases padding inside the inputs for larger touch targets */
+  margin: 8px 320px; /* Adds margin around each input for better spacing */
+  display: inline-block;
+  border: 1px solid #ccc; /* Adds a border to the inputs */
+  border-radius: 4px; /* Rounds the corners of the inputs */
+  box-sizing: border-box; /* Ensures padding does not affect the final computed width of the input */
+  font-size: 16px; /* Increases the font size for better readability */
+}
+
+.new-destination-form .submit {
+  width: 100%; /* Makes the submit button take the full width of the form */
+  background-color: #4CAF50; /* Adds a background color to the submit button */
+  color: white; /* Changes the text color to white for better contrast */
+  padding: 14px 20px; /* Increases padding inside the button for a larger touch target */
+  margin: 8px 0; /* Adds margin around the button for better spacing */
+  border: none;
+  border-radius: 4px; /* Rounds the corners of the button */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+  font-size: 16px; /* Increases the font size for better readability */
+}
+
+.new-destination-form .submit:hover {
+  background-color: #45a049; /* Changes the background color when hovering over the button */
+}
+.continent{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.destination-card {
+  background-color: #fff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for 3D effect */
+  overflow: hidden; /* Ensures content fits within the rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  cursor: pointer; /* Indicates the card is clickable */
+  margin: 20px; /* Adds some space around the card */
+}
+
+.destination-card:hover {
+  transform: translateY(-5px); /* Slightly raises the card on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increases shadow on hover for more depth */
+}
+
+.destination-card img {
+  width: 100%; /* Ensures the image covers the card width */
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensures the image covers the space without stretching */
+}
+
+.destination-card-details {
+  padding: 15px; /* Padding inside the card for text */
+}
+
+.destination-card h3, .destination-card h4 {
+  margin: 5px 0; /* Adds margin to the title and subtitle for spacing */
+}
+
+.favorites {
+  background-color: #007bff; /* Bootstrap primary color for consistency */
+  color: white; /* White text color */
+  border: none; /* Removes the default border */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Indicates the button is clickable */
+  margin-top: 10px; /* Adds space between the text and the button */
+  transition: background-color 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.favorites:hover {
+  background-color: #0056b3; /* Darkens the button on hover */
+}
+CSS
+
+Queue
+Play
+/* Style for the navbar, assuming it's already in your HTML but not included in the provided code */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333; /* Dark background for visibility */
+  color: white;
+  padding: 10px 20px;
+  z-index: 1000; /* Ensure navbar stays on top */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Ensures body content doesn't hide under the navbar */
+
+
+/* Style for the destination detail page */
+.destination-detail-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px; /* Space from the navbar */
+}
+
+.destination-detail {
+  width: 80%; /* Adjust based on preference */
+  max-width: 1200px; /* Maximum width */
+  margin-top: 60px; /* Space below the navbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destination-detail img {
+  max-width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Adds rounded corners to the image */
+}
+
+.destination-detail-info {
+  text-align: center; /* Center-aligns the text */
+  padding: 20px; /* Adds padding around the text for better readability */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destination-detail-info h1, .destination-detail-info p {
+  margin: 10px 0; /* Adds margin to space out the elements */
+}
+
+/* Style for the 'Add to Favorites' button */
+.add-to-favorites {
+  background-color: #007bff; /* Bootstrap primary color for reference */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px; /* Space above the button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.add-to-favorites:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.favorites-div {
+  /* Styles for the outer container */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favorite-list {
+  /* Using Flexbox to layout cards */
+  display: flex;
+  flex-wrap: wrap; /* This allows items to wrap to the next line */
+  justify-content: center; /* Centers items on the main axis */
+  gap: 20px; /* Space between items */
+}
+
+.favorite-list > div {
+  /* Styles for each card */
+  border: 1px solid #ccc; /* Adds a border around each card */
+  border-radius: 8px; /* Optional: Rounds the corners of the card borders */
+  padding: 10px; /* Space inside each card */
+  width: 200px; /* Or any fixed or flexible width you prefer */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow to each card */
+  text-align: center; /* Centers the text inside each card */
+  background-color: #EAEAEA;
+}
+
+.favorite-list img {
+  /* Styles for images inside cards */
+  max-width: 100%; /* Makes images responsive */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 8px; /* Optional: Rounds the corners of the images */
+}
+
+.favorite-list h3, .favorite-list h4 {
+  margin: 10px 0; /* Adds space above and below the headings */
+}
+
+.favorites-div p {
+  font-size: 2em;
 }
