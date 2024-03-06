@@ -1,9 +1,9 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function DestinationCard({ destination }) {
     const navigate = useNavigate();
-
+    
     function handleClick() {
         navigate("/destinations/" + destination.id, {state: {destination: "destination"}})
     }
@@ -14,7 +14,7 @@ function DestinationCard({ destination }) {
           <div className="destination-card-details">
             <h3>{destination.name}</h3>
             <h4>{destination.country}</h4>
-            <button className="favorites" > Add To Favorites</button>
+            <button className="favorites" > More Information</button>
           </div>
         </div>
       );

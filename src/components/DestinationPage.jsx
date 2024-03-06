@@ -34,7 +34,7 @@ function DestinationPage() {
                 <h1>{dest.name}</h1>
                 <p>{dest.continent}</p>
                 <p>{dest.country}</p>
-                <p>{dest.detail}</p>
+                <p>{dest.details}</p>
                 <button onClick={HandleClick} className="add-to-favorites">Add to Favorites</button>
             </div>
 

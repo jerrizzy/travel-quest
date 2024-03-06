@@ -5,7 +5,7 @@
       "name": "New York City",
       "image": "https://images.unsplash.com/photo-1546436836-07a91091f160?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "country": "USA",
-      "details": "Pizza, Statue of Liberty, World Trade Center",
+      "details": "Visiting New York City offers a kaleidoscope of experiences, from iconic landmarks like Times Square, Central Park, and the Statue of Liberty to world-class museums such as the Metropolitan Museum of Art and the Museum of Modern Art. The city's diverse neighborhoods provide a rich tapestry of cultures, reflected in its culinary scene, Broadway shows, and vibrant street life. Whether exploring historical sites, indulging in culinary delights, or immersing oneself in the arts, New York City promises an unforgettable and dynamic adventure for every type of traveler.",
       "continent": "North America",
       "likes": 8
     },
@@ -14,7 +14,7 @@
       "name": "Paris",
       "image": "https://plus.unsplash.com/premium_photo-1666283181610-b95ee7e55465?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "country": "France",
-      "details": "Eiffel Tower, City of Love, Escargot",
+      "details": "Paris, renowned as the City of Love and the capital of France, beckons visitors with its timeless charm, iconic landmarks, and rich cultural tapestry. Delight in the breathtaking beauty of the Eiffel Tower, explore world-class museums like the Louvre, stroll along the romantic Seine River, and savor delectable French cuisine in charming cafés. With its enchanting blend of history, art, and gastronomy, Paris offers an unparalleled experience that captivates the hearts of travelers from around the globe.",
       "continent": "Europe",
       "likes": 20
     },
@@ -23,18 +23,249 @@
       "name": "Tokyo",
       "image": "https://images.unsplash.com/photo-1549693578-d683be217e58?q=80&w=2954&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "country": "Japan",
-      "details": "Sushi, Ramen",
+      "details": "Visiting Japan offers a captivating blend of ancient traditions and cutting-edge modernity, creating a unique and diverse travel experience. Immerse yourself in the serenity of historic temples, serene gardens, and traditional tea ceremonies, juxtaposed with the vibrant energy of bustling cities like Tokyo. From iconic cherry blossoms in spring to the stunning landscapes of Mount Fuji, Japan's rich culture, exceptional cuisine, and technological marvels make it an alluring destination for travelers seeking a harmonious balance between tradition and innovation.",
       "continent": "Asia",
       "likes": 322
     },
     {
       "id": "4",
       "name": "Rio de Janeiro",
-      "image": "https://images.unsplash.com/photo-1548963670-aaaa8f73a5e3?q=80&w=2825&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" ,
+      "image": "https://images.unsplash.com/photo-1548963670-aaaa8f73a5e3?q=80&w=2825&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "country": "Brazil",
-      "details": "Christ the Redeemer Statue",
+      "details": "Rio de Janeiro, with its vibrant culture, breathtaking landscapes, and lively atmosphere, beckons visitors with a unique blend of natural beauty and dynamic urban energy. Famous for its iconic Christ the Redeemer statue atop Corcovado Mountain, stunning beaches like Copacabana and Ipanema, and the exhilarating Carnival celebrations, Rio offers a rich tapestry of experiences. Whether savoring the local cuisine, enjoying the rhythmic beats of samba, or taking in panoramic views from Sugarloaf Mountain, a visit to Rio promises an unforgettable journey filled with warmth, color, and the infectious spirit of Brazil.",
       "continent": "South America",
       "likes": 479
+    },
+    {
+      "id": "5",
+      "name": "Rome",
+      "image": "https://images.unsplash.com/photo-1531572753322-ad063cecc140?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Um9tZXxlbnwwfHwwfHx8MA%3D%3D",
+      "country": "Italy",
+      "details": "Known as the 'Eternal City,' Rome captivates with its ancient history, iconic architecture, and artistic treasures. Explore the Colosseum, Roman Forum, and Vatican City, home to St. Peter's Basilica and the Sistine Chapel. Indulge in authentic Italian cuisine at charming trattorias, and wander through cobblestone streets where history comes alive. Rome offers an immersive journey into the heart of Western civilization, blending the past and present in a captivating tapestry of culture and beauty.",
+      "continent": "Europe",
+      "likes": 0
+    },
+    {
+      "id": "6",
+      "name": "Sydney",
+      "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U3lkbmV5fGVufDB8fDB8fHww",
+      "country": "Australia",
+      "details": "Sydney, Australia's iconic harbor city, entices travelers with its stunning landmarks, vibrant culture, and coastal beauty. Marvel at the Sydney Opera House and Harbor Bridge, relax on Bondi Beach, and explore the Royal Botanic Garden. With a diverse culinary scene and lively arts and entertainment, Sydney offers a perfect blend of urban sophistication and natural wonders, making it a must-visit destination Down Under.",
+      "continent": "Australia",
+      "likes": 0
+    },
+    {
+      "id": "7",
+      "name": "Barcelona",
+      "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFyY2Vsb25hfGVufDB8fDB8fHww",
+      "country": "Spain",
+      "details": "Barcelona, a jewel of Catalonia, beckons with its unique blend of architectural wonders, artistic treasures, and lively Mediterranean spirit. Visit the iconic Sagrada Familia, stroll along the vibrant La Rambla, and indulge in delicious tapas. The city's Gaudi-designed masterpieces and historic Gothic Quarter create a captivating backdrop for a cultural and culinary adventure. Barcelona's dynamic energy and rich heritage make it a standout destination in Europe.",
+      "continent": "Europe",
+      "likes": 0
+    },
+    {
+      "id": "8",
+      "name": "Bangkok",
+      "image": "https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFuZ2tva3xlbnwwfHwwfHx8MA%3D%3D",
+      "country": "Thailand",
+      "details": "Bangkok, the bustling capital of Thailand, offers a vibrant mix of modernity and traditional Thai culture. Explore ornate temples like Wat Arun, navigate through bustling markets, and savor authentic Thai street food."
+    },
+    {
+      "id": "9",
+      "name": "Cape Town",
+      "image": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2FwZSUyMHRvd258ZW58MHx8MHx8fDA%3D",
+      "country": "South Africa",
+      "details": "Cape Town, nestled beneath the iconic Table Mountain, captivates with its stunning landscapes, diverse culture, and rich history. Explore the historic Robben Island, stroll along the scenic Victoria & Alfred Waterfront, and savor South African cuisine. With its mix of nature, urban sophistication, and historical significance, Cape Town stands as a gateway to the beauty and diversity of South Africa.",
+      "continent": "Africa",
+      "likes": 0
+    },
+    {
+      "id": "10",
+      "name": "Dubai",
+      "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHViYWl8ZW58MHx8MHx8fDA%3D",
+      "country": "United Arab Emirates",
+      "details": "Dubai, a symbol of modern luxury and innovation, dazzles visitors with its futuristic skyline and opulent attractions. From the iconic Burj Khalifa to the luxurious Palm Jumeirah, explore architectural marvels and indulge in world-class shopping. Dubai's blend of traditional souks and ultra-modern entertainment showcases the city's dynamic evolution into a global hub for culture and commerce.",
+      "continent": "Asia",
+      "likes": 0
+    },
+    {
+      "id": "11",
+      "name": "Venice",
+      "image": "https://plus.unsplash.com/premium_photo-1676120651720-374f3f499c5e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dmVuaWNlJTIwaXRhbHl8ZW58MHx8MHx8fDA%3D",
+      "country": "Italy",
+      "details": "Venice, the 'City of Canals,' enchants with its romantic waterways, historic architecture, and artistic treasures. Explore iconic sites like St. Mark's Basilica and the Grand Canal, meander through charming narrow streets, and experience the allure of Venetian masks and glassmaking. With its unique charm and timeless beauty, Venice provides an unforgettable and magical escape in the heart of Italy.",
+      "continent": "Europe",
+      "likes": 0
+    },
+    {
+      "id": "12",
+      "name": "Singapore",
+      "image": "https://images.unsplash.com/photo-1496939376851-89342e90adcd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2luZ2Fwb3JlfGVufDB8fDB8fHww",
+      "country": "Singapore",
+      "details": "Singapore, a modern marvel in Southeast Asia, fascinates with its futuristic skyline, cultural diversity, and lush green spaces. Explore the iconic Gardens by the Bay, indulge in culinary delights at hawker centers, and discover the rich heritage of Chinatown and Little India. Singapore's harmonious blend of tradition and innovation creates a captivating destination for travelers seeking a taste of the extraordinary.",
+      "continent": "Asia",
+      "likes": 0
+    },
+    {
+      "id": "13",
+      "name": "Prague",
+      "image": "https://images.unsplash.com/photo-1600623471616-8c1966c91ff6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJhZ3VlfGVufDB8fDB8fHww",
+      "country": "Czech Republic",
+      "details": "Prague, the 'City of a Hundred Spires,' boasts a rich history, stunning architecture, and a vibrant cultural scene. Explore the historic Prague Castle, wander through the charming Old Town Square, and cross the iconic Charles Bridge. With its fairytale-like ambiance, lively atmosphere, and Bohemian allure, Prague invites travelers to immerse themselves in the heart of Central Europe.",
+      "continent": "Europe",
+      "likes": 0
+    },
+    {
+      "id": "14",
+      "name": "Marrakech",
+      "image": "https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFycmFrZWNofGVufDB8fDB8fHww",
+      "country": "Morocco",
+      "details": "Marrakech, the vibrant jewel of Morocco, captivates with its bustling souks, ornate palaces, and vibrant colors. Explore the historic Jardin Majorelle, wander through the medina's labyrinthine streets, and experience the lively atmosphere of Jemaa el-Fnaa square. Marrakech's unique blend of tradition and modernity creates an immersive and sensory-rich journey in the heart of North Africa.",
+      "continent": "Africa",
+      "likes": 0
+    },
+    {
+      "id": "15",
+      "name": "Amsterdam",
+      "image": "https://images.unsplash.com/photo-1459679749680-18eb1eb37418?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YW1zdGVyZGFtfGVufDB8fDB8fHww",
+      "country": "Netherlands",
+      "details": "Amsterdam, known for its picturesque canals and historic architecture, invites visitors to explore its charming neighborhoods and cultural treasures. Visit the iconic Anne Frank House, admire the works of Dutch masters at the Rijksmuseum, and cycle through the city's bike-friendly streets. With its relaxed atmosphere and artistic heritage, Amsterdam offers a delightful and unique experience in the heart of Europe.",
+      "continent": "Europe",
+      "likes": 0
+    },
+    {
+      "id": "16",
+      "name": "Istanbul",
+      "image": "https://plus.unsplash.com/premium_photo-1661955588369-b0d28de38b45?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aXN0YW5idWx8ZW58MHx8MHx8fDA%3D",
+      "country": "Turkey",
+      "details": "Istanbul, straddling two continents, unfolds a rich tapestry of history, culture, and architectural wonders. Explore the majestic Hagia Sophia, wander through the vibrant Grand Bazaar, and cruise along the Bosphorus. With its unique blend of East and West, Istanbul offers a captivating journey through time and diverse influences in the heart of Eurasia.",
+      "continent": "Europe",
+      "likes": 0
+    },
+    {
+      "id": "17",
+      "name": "Florence",
+      "image": "https://plus.unsplash.com/premium_photo-1676289157074-1afc4b1dfdea?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmxvcmVuY2V8ZW58MHx8MHx8fDA%3D",
+      "country": "Italy",
+      "details": "Florence, the birthplace of the Renaissance, captivates with its artistic treasures, historic architecture, and romantic ambiance. Visit the Uffizi Gallery, marvel at the Florence Cathedral, and stroll across the iconic Ponte Vecchio. With its cultural richness and timeless beauty, Florence stands as a living masterpiece in the heart of Tuscany.",
+      "continent": "Europe",
+      "likes": 0
+    },
+    {
+      "id": "18",
+      "name": "Hong Kong",
+      "image": "https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8SG9uZyUyMEtvbmd8ZW58MHx8MHx8fDA%3D",
+      "country": "China",
+      "details": "Hong Kong, a vibrant metropolis at the crossroads of East and West, entices with its iconic skyline, bustling markets, and culinary delights. Explore the vibrant neighborhoods of Central and Kowloon, ride the iconic Star Ferry, and savor dim sum in traditional teahouses. Hong Kong's dynamic energy and cultural diversity create an immersive experience in the heart of Asia.",
+      "continent": "Asia",
+      "likes": 0
+    },
+    {
+      "id": "19",
+      "name": "Cairo",
+      "image": "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q2Fpcm98ZW58MHx8MHx8fDA%3D",
+      "country": "Egypt",
+      "details": "Cairo, the sprawling capital of Egypt, unveils millennia of history, ancient wonders, and vibrant culture. Explore the iconic Pyramids of Giza, marvel at the Sphinx, and wander through the historic Khan El Khalili bazaar. Cairo's juxtaposition of ancient treasures and modern city life creates a captivating journey through the heart of the Nile Delta.",
+      "continent": "Africa",
+      "likes": 0
+    },
+    {
+      "id": "20",
+      "name": "Vancouver",
+      "image": "https://images.unsplash.com/photo-1609825488888-3a766db05542?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmFuY291dmVyfGVufDB8fDB8fHww",
+      "country": "Canada",
+      "details": "Vancouver, nestled between mountains and the Pacific Ocean, offers a perfect blend of natural beauty and urban sophistication. Explore Stanley Park, ski in the nearby mountains, and stroll along the picturesque waterfront. With its diverse culture, outdoor activities",
+      "continent": "North America"
+    },
+    {
+      "id": "21",
+      "name": "Seoul",
+      "image": "https://plus.unsplash.com/premium_photo-1661914310117-9875b2229719?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2VvdWx8ZW58MHx8MHx8fDA%3D",
+      "country": "South Korea",
+      "details": "Seoul, the vibrant capital of South Korea, combines modern technology with ancient traditions. Explore historic palaces, vibrant markets, and the trendy districts of Gangnam and Itaewon. From traditional tea ceremonies to K-pop performances, Seoul offers a dynamic and captivating experience in the heart of East Asia.",
+      "continent": "Asia",
+      "likes": 0
+    },
+    {
+      "id": "22",
+      "name": "Buenos Aires",
+      "image": "https://images.unsplash.com/photo-1495317823589-e67efe1524b0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJ1ZW5vcyUyMGFpcmVzfGVufDB8fDB8fHww",
+      "country": "Argentina",
+      "details": "Buenos Aires, the 'Paris of South America,' entices with its European-inspired architecture, tango music, and rich cultural heritage. Stroll through the colorful neighborhoods of La Boca and San Telmo, visit iconic landmarks like the Obelisco, and savor Argentine steaks in local parrillas. Buenos Aires offers a passionate and lively experience in the heart of Latin America.",
+      "continent": "South America",
+      "likes": 0
+    },
+    {
+      "id": "23",
+      "name": "Auckland",
+      "image": "https://images.unsplash.com/photo-1595125990323-885cec5217ff?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXVja2xhbmR8ZW58MHx8MHx8fDA%3D",
+      "country": "New Zealand",
+      "details": "Auckland, the 'City of Sails,' captivates with its stunning harbors, volcanic landscapes, and Maori culture. Explore the iconic Sky Tower, visit the Auckland War Memorial Museum, and relax on beautiful beaches. Auckland's unique blend of urban sophistication and natural wonders makes it a gateway to the breathtaking landscapes of New Zealand.",
+      "continent": "Australia",
+      "likes": 0
+    },
+    {
+      "id": "24",
+      "name": "Munich",
+      "image": "https://images.unsplash.com/photo-1595867818082-083862f3d630?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVuaWNofGVufDB8fDB8fHww",
+      "country": "Germany",
+      "details": "Munich, the capital of Bavaria, enchants with its historic architecture, beer gardens, and cultural festivities. Visit the grandeur of Nymphenburg Palace, enjoy the vibrant atmosphere of Marienplatz, and experience the world-famous Oktoberfest. Munich offers a perfect blend of tradition and modernity in the heart of Europe.",
+      "continent": "Europe",
+      "likes": 0
+    },
+    {
+      "id": "25",
+      "name": "Cusco",
+      "image": "https://images.unsplash.com/photo-1415804941191-bc0c3bbac10d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y3VzY298ZW58MHx8MHx8fDA%3D",
+      "country": "Peru",
+      "details": "Cusco, the ancient capital of the Inca Empire, invites travelers to explore its rich history and stunning Andean landscapes. Visit the historic Plaza de Armas, discover Inca ruins like Sacsayhuamán, and embark on a journey to Machu Picchu. Cusco offers a cultural and archaeological adventure in the heart of the Andes.",
+      "continent": "South America",
+      "likes": 0
+    },
+    {
+      "id": "26",
+      "name": "Dublin",
+      "image": "https://images.unsplash.com/photo-1549918864-48ac978761a4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHVibGlufGVufDB8fDB8fHww",
+      "country": "Ireland",
+      "details": "Dublin, the lively capital of Ireland, captivates with its literary heritage, historic landmarks, and vibrant pub culture. Explore Trinity College and the Book of Kells, stroll along the River Liffey, and savor the atmosphere of Temple Bar. Dublin's blend of history, hospitality, and lively spirit makes it a charming destination in Western Europe.",
+      "continent": "Europe",
+      "likes": 0
+    },
+    {
+      "id": "27",
+      "name": "Kyoto",
+      "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a3lvdG98ZW58MHx8MHx8fDA%3D",
+      "country": "Japan",
+      "details": "Kyoto, Japan's ancient imperial capital, offers a serene escape into traditional Japanese culture and architecture. Explore historic temples like Kinkaku-ji and Fushimi Inari Shrine, stroll through bamboo groves, and experience traditional tea ceremonies. Kyoto's timeless beauty and cultural richness make it a UNESCO World Heritage destination.",
+      "continent": "Asia",
+      "likes": 0
+    },
+    {
+      "id": "28",
+      "name": "Reykjavik",
+      "image": "https://images.unsplash.com/photo-1615303298455-5e8d1aa8a464?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHJla2phdmlrfGVufDB8fDB8fHww",
+      "country": "Iceland",
+      "details": "Reykjavik, the capital of Iceland, invites travelers to discover its unique blend of Nordic charm and natural wonders. Explore the iconic Hallgrímskirkja church, relax in geothermal hot springs, and embark on adventures to witness the Northern Lights. Reykjavik serves as a gateway to the surreal landscapes of Iceland.",
+      "continent": "Europe",
+      "likes": 0
+    },
+    {
+      "id": "29",
+      "name": "Shanghai",
+      "image": "https://images.unsplash.com/photo-1538428494232-9c0d8a3ab403?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2hhbmdoYWl8ZW58MHx8MHx8fDA%3D",
+      "country": "China",
+      "details": "Shanghai, a modern metropolis on China's east coast, dazzles with its futuristic skyline, historic waterfront, and vibrant cultural scene. Explore the iconic Bund, visit the historic Yuyuan Garden, and experience the blend of traditional and contemporary in the city's architecture. Shanghai offers a dynamic and cosmopolitan experience in the heart of Asia.",
+      "continent": "Asia",
+      "likes": 0
+    },
+    {
+      "id": "30",
+      "name": "Edinburgh",
+      "image": "https://images.unsplash.com/photo-1506377585622-bedcbb027afc?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZWRpbmJ1cmdofGVufDB8fDB8fHww",
+      "country": "United Kingdom",
+      "details": "Edinburgh, the capital of Scotland, enchants with its historic landmarks, medieval architecture, and cultural festivals. Explore the Edinburgh Castle, stroll down the Royal Mile, and immerse yourself in the city's rich literary history. Edinburgh's captivating blend of tradition and innovation makes it a cultural gem in the heart of the United Kingdom.",
+      "continent": "Europe",
+      "likes": 0
     }
   ]
 }
