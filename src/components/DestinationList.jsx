@@ -13,21 +13,9 @@ function DestinationList() {
     const [continent, setContinent] = useState("All")
 
 
-    // useEffect(() => {
-    //     // This useEffect will be triggered every time the continent state changes
-    //     if (continent === "All") {
-    //       setDestinations(destinations);
-    //     } else {
-    //       let filteredDestinations = destinations.filter((d) => d.continent === continent);
-    //       setDestinations(filteredDestinations);
-    //     }
-    //   }, [continent]);
-
     function HandleContinent(e) {
         setContinent(e.target.value)  }
 
-    
-    
 
     function HandleShowForm(){
         setShowForm((showForm)=> !showForm)
@@ -44,7 +32,9 @@ function DestinationList() {
   // using filter method, and .name as the key we want from the server
   // we take the name key and converts the input we get from the user to lowercase and pass it into our search state
   const searchedResults = destinations.filter((result) => result.name.toLowerCase().includes(search.toLowerCase()))
-let filteredDestinations = searchedResults.filter((d) => continent === "All" ? true : d.continent === continent);
+
+  // here, we pass searchedResults in filteredDestination 
+  let filteredDestinations = searchedResults.filter((d) => continent === "All" ? true : d.continent === continent);
   
   // this function updates search state by targetting the input value, i.e whatever the user enters
   // we use it in the input element with onChange event listener - line 2521
@@ -54,10 +44,10 @@ let filteredDestinations = searchedResults.filter((d) => continent === "All" ? t
   }
 
   return (
-    <div className="destination-list">
+    <div  className="destination-list" >
         <div className= "list-header">
-        <h1>Find your next Destination</h1>
-        <p>Search for a specific destination, or filter by the region you want to visit next</p>
+        <h1></h1>
+        <p></p>
         <button className="add-button" onClick= {HandleShowForm} >Add a destination</button>
         </div>
         
@@ -80,11 +70,6 @@ let filteredDestinations = searchedResults.filter((d) => continent === "All" ? t
           placeholder="Search...."
           value={search}/>
           </div>
-
-          {/* {searchedResults.map((destination) => (
-          <DestinationCard key={destination.id} destination={destination} />))} */}
-
-        
     
       <div className="continent">
       <select id="continent-select" value={continent} onChange={HandleContinent}>
