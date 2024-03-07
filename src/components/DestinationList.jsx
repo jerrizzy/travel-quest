@@ -8,9 +8,12 @@ function DestinationList() {
     const [search, setSearch] = useState("")
     const [showForm, setShowForm]= useState(false)
     const [name, setName] = useState("");
+    const [country, setCountry] = useState("");
     const [image, setImage] = useState("");
     const [details, setDetails] = useState("");
+    const [addContinent, setAddContinent] = useState("");
     const [continent, setContinent] = useState("All")
+    
 
 
     function HandleContinent(e) {
@@ -23,8 +26,18 @@ function DestinationList() {
 
     function HandleSubmit(e) {
         e.preventDefault()
-        let newDest= {name, image, details}
-        setDestinations([...destinations, newDest])
+        let newDest= {name, country, image, details, continent: addContinent , likes: 0}
+        
+        fetch("http://localhost:3000/destinations", {
+      method: "POST",
+      headers:{
+        "content-type": "Application/json"
+      },
+      body: JSON.stringify(newDest)
+
+    })
+    .then(response => response.json())
+    .then(data => setDestinations([... destinations, data]))
     }
 
 
@@ -54,9 +67,11 @@ function DestinationList() {
         {showForm ? 
         <div className="form">
             <form onSubmit={HandleSubmit} className="new-destination-form">
-            <input onChange={(e) => {setName(e.target.value);}} value= {name} type="text" name="name" placeholder="Enter a destination..."className="input-text"></input>   
+            <input onChange={(e) => {setName(e.target.value);}} value= {name} type="text" name="name" placeholder="Enter a destination..."className="input-text"></input> 
+            <input onChange={(e) => {setCountry(e.target.value);}} value= {country} type="text" name="name" placeholder="Enter a country..."className="input-text"></input>  
             <input onChange={(e) => {setImage(e.target.value);}} value= {image} type="text" name="image" placeholder="Enter an image URL for your destination..." className="input-text" ></input> 
             <input onChange={(e) => {setDetails(e.target.value);}} value= {details} type="text" name="details" placeholder="Enter details about your destination" className="input-text"></input>
+            <input onChange={(e) => {setAddContinent(e.target.value);}} value= {addContinent} type="text" name="details" placeholder="Enter Continent" className="input-text"></input>
             <input type="submit" name= "submit" value= "Create Your Destination" className="submit"></input>
             
             

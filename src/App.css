@@ -154,12 +154,14 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+  color: #f0f0f0;
 }
 .list-header p {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2em;
+  color: #f0f0f0;
 }
 .search {
   display: flex;
@@ -356,6 +358,7 @@ Play
   border: 5px solid #fff; /* Optional: Adds rounded corners to the image */
 }
 
+
 .destination-detail img:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
@@ -393,11 +396,49 @@ Play
   background-color: #0056b3; /* Darker shade on hover */
 }
 
+
 .destination-detail-page {
   display: flex;
 }
 
 .seach-category-container {
   display: flex;
+}
+
+
+
+
+.favorite-list {
+  /* Using Flexbox to layout cards */
+  display: flex;
+  flex-wrap: wrap; /* This allows items to wrap to the next line */
+  justify-content: center; /* Centers items on the main axis */
+  gap: 20px; /* Space between items */
+}
+
+.favorite-list > div {
+  /* Styles for each card */
+  border: 1px solid #ccc; /* Adds a border around each card */
+  border-radius: 8px; /* Optional: Rounds the corners of the card borders */
+  padding: 10px; /* Space inside each card */
+  width: 200px; /* Or any fixed or flexible width you prefer */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow to each card */
+  text-align: center; /* Centers the text inside each card */
+  background-color: #EAEAEA;
+}
+
+.favorite-list img {
+  /* Styles for images inside cards */
+  max-width: 100%; /* Makes images responsive */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 8px; /* Optional: Rounds the corners of the images */
+}
+
+.favorite-list h3, .favorite-list h4 {
+  margin: 10px 0; /* Adds space above and below the headings */
+}
+
+.favorites-div p {
+  font-size: 2em;
 }
 
