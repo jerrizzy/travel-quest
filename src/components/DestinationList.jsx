@@ -63,7 +63,7 @@ function DestinationList() {
             </form>
 
         </div> : null }
-
+      <div className="seach-category-container">
         <div className="search">
         <input onChange={handleSearch}
           type="text"
@@ -74,7 +74,7 @@ function DestinationList() {
       <div className="continent">
       <select id="continent-select" value={continent} onChange={HandleContinent}>
         
-  <option value="All">Select a Continent</option>
+  <option value="All">Continent</option>
   <option value="Africa">Africa</option>
   <option value="Asia">Asia</option>
   <option value="Europe">Europe</option>
@@ -83,6 +83,7 @@ function DestinationList() {
   <option value="Australia">Australia</option>
   <option value="Antarctica">Antarctica</option>
 </select>
+</div>
 </div>
         
         <div className="card-holder">

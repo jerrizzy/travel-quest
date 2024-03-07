@@ -3,6 +3,17 @@
 /* button{
   background-color: #7F9F80 !important;
 } */
+.main{
+  background-blend-mode: multiply;
+      /* object-fit: "cover"; */
+      /* background-size: "cover"; */
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 100vh;
+      overflow-y: scroll;
+      min-width: 102vw;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -129,9 +140,8 @@ h1 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
-
 }
+
 .list-header{
   display: flex;
   justify-content: center;
@@ -165,6 +175,7 @@ h1 {
   border: 3px;
   border-radius: 50px;
   transition: border-color 0.3s ease;
+  font-size: large;
 }
 .continent select {
   display: flex;
@@ -172,12 +183,18 @@ h1 {
   align-items: center;
   width: 170px;
   margin-top: 10px;
+  background-color: #1d1df4;
+  border-radius: 50px;
+  color: white;
+  font-size: medium;
+  padding: 15px;
 }
 .card-holder {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .form {
@@ -232,6 +249,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
 }
 .destination-card {
   background-color: #fff; /* White background */
@@ -306,8 +324,7 @@ Play
   align-items: center;
   justify-content: center ;
   padding: 0;
-  height: 90vw;
-
+  height: 90vh;
 }
 
 .destination-detail {
@@ -320,6 +337,9 @@ Play
   border-radius: 15px;
   color: #333;
   text-align: left;
+  margin-top: 60px;
+  min-width: 20vw;
+  flex-wrap: wrap;
 }
 
 .destination-detail img {
@@ -338,6 +358,7 @@ Play
 
 .destination-detail img:hover {
   transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .destination-detail-info  {
@@ -373,6 +394,10 @@ Play
 }
 
 .destination-detail-page {
+  display: flex;
+}
+
+.seach-category-container {
   display: flex;
 }
 
