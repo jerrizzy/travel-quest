@@ -1,8 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* button{
+  background-color: #7F9F80 !important;
+} */
+.main{
+  background-blend-mode: multiply;
+      /* object-fit: "cover"; */
+      /* background-size: "cover"; */
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 100vh;
+      overflow-y: scroll;
+      min-width: 102vw;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(135deg, #ff9900 0%, #ff5f6d 100%);
+  background-color: #1D24CA;
   /* Updated to a deep gray/blue shade */
   color: white;
   padding: 10px 20px;
@@ -37,14 +53,12 @@
 }
 
 .links a:hover {
-  background-color: #404050;
+  background-color: #df8152;
   /* Slightly lighter shade of the navbar for hover */
 }
 
 
 .banner {
-
-  background-image: url("src/assets/green_mountain_europe.jpeg");;
     color: white;
     text-align: center;
     /* padding: 100px 20px; */
@@ -126,9 +140,8 @@ h1 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
-
 }
+
 .list-header{
   display: flex;
   justify-content: center;
@@ -154,19 +167,29 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px
+  padding-top: 20px;
 }
 .search input {
   border-radius: 30px;
   border-color: rgb(113, 113, 113);
-  width: 200px
+  width: 400px;
+  padding: 15px;
+  border: 3px;
+  border-radius: 50px;
+  transition: border-color 0.3s ease;
+  font-size: large;
 }
 .continent select {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 170px;
   margin-top: 10px;
+  background-color: #1d1df4;
+  border-radius: 50px;
+  color: white;
+  font-size: medium;
+  padding: 15px;
 }
 .card-holder {
   display: flex;
@@ -210,7 +233,7 @@ h1 {
 
 .new-destination-form .submit {
   width: 100%; /* Makes the submit button take the full width of the form */
-  background-color: #4CAF50; /* Adds a background color to the submit button */
+  background-color: #FF6C22; /* Adds a background color to the submit button */
   color: white; /* Changes the text color to white for better contrast */
   padding: 14px 20px; /* Increases padding inside the button for a larger touch target */
   margin: 8px 0; /* Adds margin around the button for better spacing */
@@ -223,11 +246,12 @@ h1 {
 .new-destination-form .submit:hover {
   background-color: #45a049; /* Changes the background color when hovering over the button */
 }
-.continent{
+.destination-list .continent{
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
 }
 .destination-card {
   background-color: #fff; /* White background */
@@ -252,6 +276,7 @@ h1 {
 
 .destination-card-details {
   padding: 15px; /* Padding inside the card for text */
+  
 }
 
 .destination-card h3, .destination-card h4 {
@@ -259,7 +284,7 @@ h1 {
 }
 
 .favorites {
-  background-color: #007bff; /* Bootstrap primary color for consistency */
+  background-color: #1D24CA; /* Bootstrap primary color for consistency */
   color: white; /* White text color */
   border: none; /* Removes the default border */
   padding: 10px 20px; /* Padding inside the button */
@@ -299,34 +324,60 @@ Play
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px; /* Space from the navbar */
+  justify-content: center ;
+  padding: 0;
+  height: 90vh;
 }
 
 .destination-detail {
-  width: 80%; /* Adjust based on preference */
-  max-width: 1200px; /* Maximum width */
-  margin-top: 60px; /* Space below the navbar */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+  background-color: #FFC374;
+  padding: 50px;
+  border-radius: 15px;
+  color: #333;
+  text-align: left;
+  margin-top: 60px;
+  min-width: 20vw;
+  flex-wrap: wrap;
 }
 
 .destination-detail img {
+   width: 500px;
+  height: auto;
+  /*
+  top: 400px;
+  left: 450px;
+  position: absolute; */
+  background-size: cover;
   max-width: 100%; /* Make image responsive */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Optional: Adds rounded corners to the image */
+  border-radius: 16px;
+  border: 5px solid #fff; /* Optional: Adds rounded corners to the image */
 }
 
-.destination-detail-info {
-  text-align: center; /* Center-aligns the text */
-  padding: 20px; /* Adds padding around the text for better readability */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.destination-detail img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
+
+.destination-detail-info  {
+  text-align: left; /* Center-aligns the text */
+  margin-left: 60px; /* Adds padding around the text for better readability */
+}
+
+.destination-detail-info h1{
+  font-size: 60px;
+  text-shadow: none;
+}
+
 
 .destination-detail-info h1, .destination-detail-info p {
   margin: 10px 0; /* Adds margin to space out the elements */
+  /* font-family: 'Aldine721 BT' */
 }
 
 /* Style for the 'Add to Favorites' button */
@@ -345,13 +396,17 @@ Play
   background-color: #0056b3; /* Darker shade on hover */
 }
 
-.favorites-div {
-  /* Styles for the outer container */
-  padding: 20px;
+
+.destination-detail-page {
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
+
+.seach-category-container {
+  display: flex;
+}
+
+
+
 
 .favorite-list {
   /* Using Flexbox to layout cards */
@@ -386,3 +441,4 @@ Play
 .favorites-div p {
   font-size: 2em;
 }
+
