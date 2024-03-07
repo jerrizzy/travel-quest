@@ -4,7 +4,7 @@ import { useOutletContext } from "react-router-dom";
 
 
 function DestinationList() {
-    const { destinations, setDestinations } = useOutletContext();
+    const { destinations, setDestinations, setImageBackground, imageBackground } = useOutletContext();
     const [search, setSearch] = useState("")
     const [showForm, setShowForm]= useState(false)
     const [name, setName] = useState("");
@@ -13,8 +13,10 @@ function DestinationList() {
     const [details, setDetails] = useState("");
     const [addContinent, setAddContinent] = useState("");
     const [continent, setContinent] = useState("All")
+
     
 
+    setImageBackground("https://i.pinimg.com/564x/be/42/96/be42964104fc7a21e902423f862d892e.jpg")
 
     function HandleContinent(e) {
         setContinent(e.target.value)  }
@@ -57,11 +59,12 @@ function DestinationList() {
   }
 
   return (
-    <div  className="destination-list" >
-        <div className= "list-header">
-        <h1></h1>
-        <p></p>
-        <button className="add-button" onClick= {HandleShowForm} >Add a destination</button>
+    <div style={{
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${imageBackground})`
+      }}  className="destination-list" >
+
+        <div >
+        <button className="add-button" onClick={HandleShowForm} >{showForm ? "Close" : "Add a destination"}</button>
         </div>
         
         {showForm ? 

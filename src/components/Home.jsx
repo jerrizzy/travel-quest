@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
 
 function Home() {
-  const {setImage} = useOutletContext()
+  const {setImageBackground} = useOutletContext()
 
   useEffect(() =>{
-    setImage("src/assets/green_mountain_europe.jpeg")
+    setImageBackground("src/assets/green_mountain_europe.jpeg")
   }, [])
 
   return (
