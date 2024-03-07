@@ -6,7 +6,7 @@ import Favorites from "./Favorites";
 function DestinationPage() {
     const { id } = useParams();
     const [dest, setDest] = useState({})
-    const { favorites, setFavorites, setImage } = useOutletContext();
+    const { favorites, setFavorites, setImageBackground } = useOutletContext();
     
     const continents = {
         "Asia": "https://i.pinimg.com/564x/7f/2d/96/7f2d96104ffadeaaef28267d686d0459.jpg",
@@ -25,7 +25,7 @@ function DestinationPage() {
         fetch("http://localhost:3000/destinations/" + id)
         .then((res)=> res.json())
         .then((data)=> {setDest(data)
-        setImage(continents[data.continent])
+            setImageBackground(continents[data.continent])
         } );
     }, []);
 

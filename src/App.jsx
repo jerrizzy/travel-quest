@@ -15,7 +15,7 @@ function App() {
   const [destinations, setDestinations] = useState([]) 
   const [favorites, setFavorites] = useState([])
 
-  const [image, setImage] = useState("src/assets/green_mountain_europe.jpeg")
+  const [imageBackground, setImageBackground] = useState("src/assets/green_mountain_europe.jpeg")
   
   // fetching destinations from server
   useEffect(() => {
@@ -26,11 +26,11 @@ function App() {
 
   return (
     <div style={{
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${image})`
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${imageBackground})`
       }} className='main'>
       <Navbar />
       <div className="container">
-      <Outlet context={{ destinations, setDestinations, favorites, setFavorites, setImage}} />
+      <Outlet context={{ destinations, setDestinations, favorites, setFavorites, setImageBackground, imageBackground}} />
 
       </div>
       
