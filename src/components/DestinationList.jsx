@@ -81,6 +81,7 @@ function DestinationList() {
             </form>
 
         </div> : null }
+        
       <div className="seach-category-container">
         <div className="search">
         <input onChange={handleSearch}
