@@ -11,15 +11,18 @@ We built an API that we're fetching all the destinations from.
 Then we used React Router to set up the pages:
 
 DestinationList page.
-Here we have a search feature that we built using the filter method
-Initially, we fetched all destinations in our App component, then stored them in a state
-passed that state around using outlet context to DestinationList component
-then we used the filter method to search for the specific destination then stored in a variable.
-We used the same variable then map through it for that specific destination and passed it down as a prop to our DestinationCard component
+Here we have a search feature that we build using the filter method
+Initially, we fetch all destinations in our App component, then store them in a state
+pass that state around using outlet context hook to DestinationList component
+then we use the filter method to search for the specific destination then store in a variable.
+We use the same variable then map through it for that specific destination and pass it down as a prop to our DestinationCard component
 ![destination_list_travel_quest](https://github.com/jerrizzy/travel-quest/assets/37149800/2a7b3aa9-eedf-4baa-92e9-678b8340fb80)
 
 Destination page.
-![destination_list_travel_quest](https://github.com/jerrizzy/travel-quest/assets/37149800/1695fda3-a6d8-4094-8882-ffc9d629fd8a)
+In DestinationCard component...
+we have a handleClick function that uses a navigate hook to direct to the destination route and use a state to pass that destination's detail to DestinationPage component
+Then we use the handleClick function on the card div with an onClick event. Then since we used the navigate inside the handleCick function it takes us to the DestinationPage component
+![dest_info_travel_quest](https://github.com/jerrizzy/travel-quest/assets/37149800/07f070e3-3a8a-4d3c-8df6-1d659f847474)
 
 Favorite page.
 ![favorites_travel_quest](https://github.com/jerrizzy/travel-quest/assets/37149800/f4792db7-ff4d-4a6a-89d7-d32fea3fe569)
