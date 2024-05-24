@@ -11,6 +11,11 @@ We built an API that we're fetching all the destinations from.
 Then we used React Router to set up the pages:
 
 DestinationList page.
+Here we have a search feature that we built using the filter method
+Initially, we fetched all destinations in our App component, then stored them in a state
+passed that state around using outlet context to DestinationList component
+then we used the filter method to search for the specific destination then stored in a variable.
+We used the same variable then map through it for that specific destination and passed it down as a prop to our DestinationCard component
 ![destination_list_travel_quest](https://github.com/jerrizzy/travel-quest/assets/37149800/2a7b3aa9-eedf-4baa-92e9-678b8340fb80)
 
 Destination page.
