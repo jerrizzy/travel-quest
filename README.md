@@ -20,6 +20,7 @@ We use the same variable then map through it for that specific destination and p
 
 Destination page.
 In DestinationCard component...
+
 we have a handleClick function that uses a navigate hook to direct to the destination route and use a state to pass that destination's detail to DestinationPage component
 Then we use the handleClick function on the card div with an onClick event. Then since we used the navigate inside the handleCick function it takes us to the DestinationPage component
 ![dest_info_travel_quest](https://github.com/jerrizzy/travel-quest/assets/37149800/07f070e3-3a8a-4d3c-8df6-1d659f847474)
