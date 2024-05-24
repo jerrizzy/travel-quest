@@ -29,7 +29,7 @@ Favorite page.
 ![favorites_travel_quest](https://github.com/jerrizzy/travel-quest/assets/37149800/f4792db7-ff4d-4a6a-89d7-d32fea3fe569)
 
 
-To access this repo, fork then clone it to VScode
+To access this repo, fork then clone it to your directory
 
 to run in VScode, open up terminal and run:
 npm run dev
